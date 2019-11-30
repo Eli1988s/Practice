@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session5</title>
+    <style>
+        #content{
+            background-color: gray;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: #444;
+        }
+
+
+        .box1 {
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman';
+            font-size: 20px;
+            
+        }
+        .box2{
+            font-size: 15px;
+            background-color: white;
+            
+        }
+        .box3{
+            background-color: red;
+             
+        }
+        .box4{
+            background-color: #f39494;
+             
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box1">
+        <h1>    
+             Welcome to my gallery
+        </h1>
+    </div>
+    <div class="box2">
+        <h2>
+             <b>Current gallery: Philadelphia</b>
+        </h2>
+        <p>
+            <b>Here's a series of photos I took from my recent visit to Philadelphia. I love Philadelphia, it has wonderful neighborhoods, a vibrant downtown, and the type of hidden architectural gems that you only get from older cities. It's a joy to shoot, just be sure not to call it "Philly," turns out the locals really don't like that!</b>
+        </p>
+    </div>
+
+    <div   id="content">
+        <img src="./philly_1.jpg" alt="philly_1">
+        <img src="./philly_2.jpg" alt="philly_2">
+        <img src="./philly_3.jpg" alt="philly_3">
+        <img src="./philly_4.jpg" alt="philly_4">
+        <img src="./philly_5.jpg" alt="philly_5">
+        <img src="./philly_6.jpg" alt="philly_6">
+    </div>
+    <div class="box3">
+        <h3>
+            Exploring HTML normal document flow
+        </h3>
+        <div class="box4">
+            <p>
+                Prior to HTML5, HTML elements could be categorized as "block-level" or "inline-level." For the most part that's still true, although HTML5 created multiple element content categorizations such as Phrasing, Flow, and Sectioning that replace the more global vlock-level and inline-level categorization. Regardless, browsers still display content primarily using those two definitions. Most Phrasing content is displayed as inline-level elements while Heading and Sectioning content is displayed as block-level.<br><br>
+                what does this mean? Well, block-level elements are typically formatted with a line break before and after the content; resulting in the content occupying it's own line on the page. Some block-level elements, like divs and the new HTML5 sectioning elements, can contain other block-level elements, while others like paragraphs and headings cannot.<br><br>
+                Inline-level elements typically occur within another block-level element (although they don't have to) and generally contain either data or other inline-level elements. This content typically displays horizontally along the entire width of the viewport, only breaking down to a new line when the viewport width forces it to. Images, bold, italic, strong, emphasis, inputs, and links are all examples of inline-level elements.<br><br>
+                <h3>
+                    How normal document flow works
+                </h3>
+                Browsers display content in the order that it is found. Content at the top of the document, for example, is displayed first and is followed by the content after it. Block-level elements are displayed on their own line, while inline-level elements are displayed as part of the normal flow of document content. The results in the "stacking" of block-level blocks and the flow of inline-level elements within these blocks.
+            </p>
+        </div>
+    </div>
+
+  
+
+</body>
+</html>
